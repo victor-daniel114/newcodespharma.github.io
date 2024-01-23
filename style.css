@@ -1,0 +1,118 @@
+
+
+@import url(bootstrap-5.3.2-dist/css/bootstrap.min.css);
+html {
+      /* This defines what 1rem is */
+   /* font-size: 1.4rem;  //1 rem = 10px; 10px/16px = 62.5% */
+    scroll-behavior: smooth; 
+    /* @media screen and (prefers-reduced-motion: reduce) {scroll-behavior: auto;} */
+    &* {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+    
+}
+
+::selection {
+    /* background-color: #212121; */
+    color: #212121;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E0EAFC;
+    font-size: .8rem !important;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #212121;
+    box-sizing: border-box;
+     
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    & li {
+        list-style: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+  link:visited:focus:hover
+a:not([href]):not([tabindex]) {
+    color:#212121;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer !important;
+        outline: none !important;
+        color: tint(#212121, 5%)
+    }
+}
+
+a {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        transition: all ease 0.3s;
+        color: #212121;
+    }
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: none !important;
+        color: tint(#212121, 5%)
+    }
+    &.disabled {
+        color: #cbcbcb;
+        cursor: not-allowed;
+    }
+}
+
+.centerMainDiv {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.centerMainDiv.bgColor {
+    background-color: #fff;
+    max-width:480px;
+}
+.form-control,.form-select{
+    font-size: .8rem !important;
+}
+.form-control:focus , .form-select:focus {
+    box-shadow: none;
+}
+.form-label {
+    margin-bottom: 0.2rem;
+}
+.form-control-plaintext {
+    color: #646464;
+}
